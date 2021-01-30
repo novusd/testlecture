@@ -99,7 +99,13 @@
 # my_list = list(a)
 # my_list = [1, 2, 3, 4, 5, 6]
 # print(my_list)
-#
+a = 'Kirill Strelnikov'
+b = list('Kirill Strelnikov')
+c = []
+for b in a:
+    if b.isupper():
+        c.append(b)
+print(c)
 # my_list.append(1)  # добавить список
 # print(my_list)
 # a = my_list[-3:]
