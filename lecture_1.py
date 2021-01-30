@@ -1,10 +1,11 @@
 # начало первой лекции
-print('Start')
-print('Исправляем ошибки')
+# print('Start')
+# print('Исправляем ошибки')
 # Работа с консолью можно запускать из гит или загрузить питон в консоли
 # 2 + 2, - , * , **, /, //, %
 # Операции сравнения < > == !=
 # Вещественные числа
+
 # Разные нотации (Записи) 0.5 или .5(американская нотация)
 # Важно понимать что вещественные числа храняться в интерпретаторе с округлением. Пример:
 # print(0.1561513215123156121511515121512151) # смотреть вывод на консоли число будет короче
@@ -23,12 +24,13 @@ print('Исправляем ошибки')
 # print('hello'.encode())
 # print('Привет'.encode())
 # print(b'\xd0\x9f\xd1\x80\xd0\xb8\xd0\xb2\xd0\xb5\xd1\x82'.decode())
+# print(b'\xd0\x9d\xd1\x80\xd0\xb7\xd0\xb2\xd0\xb5\xd1\x82'.decode())
 # # нужно для перевода "сырых" файлов в читаемый код. Например (.exe, dump)
 # print(b'\xd0\x9f\xd1\x80\xd0\xb8\xd0\xb2\xd0\xb5\xd1\x82'.decode('utf8'))  # по умолчанию стоит UTF8
 # print(b'\xd0\x9f\xd1\x80\xd0\xb8\xd0\xb2\xd0\xb5\xd1\x82'.decode('cp1251')) # кодировка для старых драйверов
 # # Болеее подробно будем разбирать при создании и запаковки файлов
 #
-# # Индексация строк. Смотреть таблицу "helpa"
+# Индексация строк. Смотреть таблицу "helpa"
 # print('qwertyu'[0])
 # print('qwertyu'[-2])
 # print('qwertyu'[2:4])
@@ -37,9 +39,9 @@ print('Исправляем ошибки')
 # print('qwertyu'[:4])
 # print('qwertyu'[2:])
 # print('qwertyu'[:])
-# print('qwertyu'[:4] +'qwertyu'[4:])
+# print('qwertyu'[:4] + 'qwertyu'[4:])
 # print('qwertyuiopasdfghjkl'[0:20:2])
-# print('qwertyuiopasdfghjkl'[0:20:-2])
+# print('qwertyuiopasdfghjkl'[0:10:-2])
 # print('qwertyuiopasdfghjkl'[::-1])
 # print(len('qwertyuiopasdfghjkl'))
 #
@@ -56,9 +58,11 @@ print('Исправляем ошибки')
 # x, y = 10, 20
 # # Динамическая типизация
 # print(id(car))
+# print(id(my_car))
 # print(id(car) == id(my_car))
-#
+
 # # Методы строк
+# car = 'skoda'
 # print(car.find('a'))
 # print(car.replace('a', 'o'))
 # print(car.upper())
@@ -72,25 +76,41 @@ print('Исправляем ошибки')
 
 # Списки
 
-# a = 'hello'
+# a = 'hello '
+# # my_list = list(a)
+#
+# my_list = [list(a)]
+# print(my_list)
+# print(my_list[0][0])
+#
+# name = 'Ivan Petrov'
+# list_name = list(name)
+# ini = []
+# for char in list_name:
+#     if char.isupper():
+#         ini.append(char)
+# print(ini)
+# one = list_name[0]
+# print(one.isupper())
+# print(name.isupper())
+
+#
+# a = 'hello '
 # my_list = list(a)
-# my_list = [a]
+# my_list = [1, 2, 3, 4, 5, 6]
 # print(my_list)
 #
-# my_list_1 = [1, 2, 3, 4, 5, 6]
-# print(my_list)
-# #
 # my_list.append(1)  # добавить список
 # print(my_list)
-# a = my_list[1]
+# a = my_list[-3:]
 # print(a)
 #
 #
 # word = 'qwertuyiopfjgkfgjdfjgbfd'
 # print(len(word))
 # print(word[1:4])
-# b = word[1:4]
 # a = word[1:12:2]
+# b = word[1:4]
 # print(a)
 # c = word[1:20:4]
 # print(c)
@@ -100,17 +120,35 @@ print('Исправляем ошибки')
 # print(my_list[1])
 # h = my_list[1]
 # print(h[1])
-#
+# #
 # my_list = [1, 3, 5, 6, 7, 8, 90, 4, 3, 2, 67, 8, 9]
-# # my_list.sort()
+#
+# list_1 = my_list
+# print(list_1)
+# list_1.sort()
+# print(list_1)
+# print(my_list[1])
+# print(list_1[1])
+# print(id(my_list) == id(list_1))
+# print(my_list[1] == list_1[1])
 # print(my_list)
+
+# a = 'abcd'
+# print(a.append(2))
+
+# my_list = [[], []]
+# my_list = my_list * 3
+# my_list[0].append(2)
+# print(my_list)
+
 # print(len(my_list))
 # print(my_list[12])
 
-# my_tuple = (23, 34)
-
 # my_list = [2, 'hello', 'hello world', 520]
 # print(my_list)
+
+
+
 # spisok = list('555gfd69jhgk')
 # print(spisok)
 # a = int(spisok[0])
@@ -125,6 +163,7 @@ print('Исправляем ошибки')
 # my_list.append(6)
 # print(my_list)
 # my_list.extend(my_list_2)
+# # my_list = my_list + my_list_2
 # print(my_list)
 # a = my_list[0:9:2]
 # print(a)
@@ -136,19 +175,22 @@ print('Исправляем ошибки')
 # print(my_list)
 # tuple_1 = tuple('hello')
 # print(tuple_1)
-# # tuple_1.append(6)
+# tuple_1.append(6)
 # tuple_1[1] = 2
 # print(tuple_1)
 # my_tuple = (0, 0, 1, 2, 2, 2, 3, 9)
 # print(my_tuple)
-# # # my_tuple[1] = 1
-# # # print(my_tuple)
+# # my_tuple[1] = 1
+# # print(my_tuple)
 # my_tuple_list = list(my_tuple)
 # print(my_tuple_list)
+# print(id(my_tuple))
+# print(id(my_tuple_list))
 # my_tuple_list[1] = 1
 # print(my_tuple_list)
 # my_tuple = tuple(my_tuple_list)
 # print(my_tuple)
+# print(id(my_tuple))
 
 my_dict = {'hello': 1, 'world': 2, 'word': 5, 12: '20'}
 # print(my_dict)
@@ -156,21 +198,26 @@ my_dict = {'hello': 1, 'world': 2, 'word': 5, 12: '20'}
 # a = dict(((1,(1,2)), (2,2), (3,3)))
 # print(a)
 # b = a[1]
+# print(type(b))
 # print(b[0] + b[1])
 # my_dict['hello'] = 'world'
 # print(my_dict)
-# # b = len(my_dict['hello'])
-# # print(b)
+# b = len(my_dict['hello'])
+# print(b)
 # c = my_dict['hello']
 # print(c[0])
 # print(my_dict.keys())
-# my_list = [1, 2, 3, 4, 5]
-# my_list_1 = ["Имя", 3, 4, 5]
-# print(f'Рост {my_list_1[0]} = {my_list[2]}cm')
+
+
 # a = set('hellogakwclfjhdsgvhgjhggvhjgjhjhjhjgkhjjhgj')
 # c = set('sjdhgfhsdvfjsdfjdsjfhjhsdfdsjhfghsjfsdjfjsfj')
 # print(a)
 # print(c)
-# b = {5, 6, 8, 9, 7, 7, 2, 5, 5, 5}
-# print(b)
+# # print(a < c)
+# # b = {5, 6, 8, 9, 7, 7, 2, 5, 5, 5}
+# # print(b)
 # print(a.intersection(c))
+
+# my_list = [1, 2, 3, 4, 5]
+# my_list_1 = ["Имя", 3, 4, 5]
+# print(f'Рост {my_list_1[0]} = {my_list[2]}cm')
