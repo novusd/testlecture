@@ -77,12 +77,12 @@
 # Списки
 
 # a = 'hello '
-# # my_list = list(a)
-#
+# my_list = list(a)
+# #
 # my_list = [list(a)]
 # print(my_list)
 # print(my_list[0][0])
-#
+# #
 # name = 'Ivan Petrov'
 # list_name = list(name)
 # ini = []
@@ -99,19 +99,19 @@
 # my_list = list(a)
 # my_list = [1, 2, 3, 4, 5, 6]
 # print(my_list)
-a = 'Kirill Strelnikov'
-b = list('Kirill Strelnikov')
-c = []
-for b in a:
-    if b.isupper():
-        c.append(b)
-print(c)
+# a = 'Kirill Strelnikov'
+# b = list('Kirill Strelnikov')
+# c = []
+# for b in a:
+#     if b.isupper():
+#         c.append(b)
+# print(c)
 # my_list.append(1)  # добавить список
 # print(my_list)
 # a = my_list[-3:]
 # print(a)
 #
-#
+# #
 # word = 'qwertuyiopfjgkfgjdfjgbfd'
 # print(len(word))
 # print(word[1:4])
@@ -198,7 +198,7 @@ print(c)
 # print(my_tuple)
 # print(id(my_tuple))
 
-my_dict = {'hello': 1, 'world': 2, 'word': 5, 12: '20'}
+# my_dict = {'hello': 1, 'world': 2, 'word': 5, 12: '20'}
 # print(my_dict)
 # print(my_dict['hello'])
 # a = dict(((1,(1,2)), (2,2), (3,3)))
@@ -217,13 +217,13 @@ my_dict = {'hello': 1, 'world': 2, 'word': 5, 12: '20'}
 
 # a = set('hellogakwclfjhdsgvhgjhggvhjgjhjhjhjgkhjjhgj')
 # c = set('sjdhgfhsdvfjsdfjdsjfhjhsdfdsjhfghsjfsdjfjsfj')
-# print(a)
-# print(c)
+# # # print(a)
+# # # print(c)
 # # print(a < c)
-# # b = {5, 6, 8, 9, 7, 7, 2, 5, 5, 5}
-# # print(b)
+# # # b = {5, 6, 8, 9, 7, 7, 2, 5, 5, 5}
+# # # print(b)
 # print(a.intersection(c))
-
-# my_list = [1, 2, 3, 4, 5]
-# my_list_1 = ["Имя", 3, 4, 5]
-# print(f'Рост {my_list_1[0]} = {my_list[2]}cm')
+#
+# # my_list = [1, 2, 3, 4, 5]
+# # my_list_1 = ["Имя", 3, 4, 5]
+# # print(f'Рост {my_list_1[0]} = {my_list[2]}cm')
